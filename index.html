@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sadia Rahman — Physics Student</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#hero" class="nav-logo">ψ Sadia Rahman</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#academics">Academics</a></li>
+      <li><a href="#personal">Personal</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <p class="hero-eyebrow">Quantum Engineer &amp; Computational Physicist</p>
+    <h1 class="hero-name">Sadia<br><em>Rahman</em></h1>
+    <p class="hero-role">M.Sc. Student in Physics</p>
+    <p class="hero-bio">I build tools at the intersection of quantum computing, simulation, and software engineering.
+      The best code, like quantum mechanics, hides its deepest logic beneath an elegant surface.</p>
+    <div class="hero-cta">
+      <a href="static/Sadia_CV.pdf" class="btn-p" download="Sadia_CV.pdf">Academic Work</a>
+      <a href="#contact" class="btn-o">Get in Touch</a>
+    </div>
+    <div class="hero-bloch">
+      <canvas id="bloch-hero" width="420" height="420"></canvas>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-grid">
+      <div>
+        <div class="section-label reveal">About</div>
+        <h2 class="section-title reveal">Physicist first,<br>engineer second</h2>
+        <div class="about-text reveal">
+          <p>I completed my PhD at ETH Zürich, focusing on <strong>quantum error correction</strong> and topological
+            qubit architectures. My research has been published in <em>Physical Review Letters</em> and <em>Nature
+              Quantum Information</em>.</p>
+          <p>Today I design quantum algorithms and build simulation software for researchers who need reliable,
+            readable, fast tools — not black boxes.</p>
+          <p>When I'm not thinking about decoherence or entanglement fidelity, I'm hiking in the Jura mountains or
+            learning Arabic.</p>
+        </div>
+      </div>
+      <div class="about-stats reveal">
+        <div class="stat-box">
+          <div class="stat-num">12</div>
+          <div class="stat-label">Published Papers</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">7</div>
+          <div class="stat-label">Years Research</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Open Source Libs</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">∞</div>
+          <div class="stat-label">Unsolved Problems</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="skills-layout">
+      <div>
+        <div class="section-label reveal">Skills</div>
+        <h2 class="section-title reveal">What I<br>work with</h2>
+        <div class="skills-intro reveal">
+          <p>My work spans theoretical physics, low-level simulation code, and high-level developer tools — so my
+            skillset lives at all three layers.</p>
+          <p>I prize clarity above cleverness, and I believe a good API is a form of communication, not just an
+            interface.</p>
+        </div>
+      </div>
+      <div class="skills-groups reveal" id="skillsContainer">
+        <div>
+          <div class="skill-group-label">Quantum &amp; Physics</div>
+          <div class="skill-bars">
+            <div class="skill-row">
+              <div class="skill-meta"><span class="skill-name">Quantum Circuit Design</span><span
+                  class="skill-pct">96%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-w="96"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-meta"><span class="skill-name">Error Correction Theory</span><span
+                  class="skill-pct">92%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-w="92"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-meta"><span class="skill-name">Quantum Optics</span><span class="skill-pct">78%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-w="78"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="skill-group-label">Engineering</div>
+          <div class="skill-bars">
+            <div class="skill-row">
+              <div class="skill-meta"><span class="skill-name">Python / NumPy / SciPy</span><span
+                  class="skill-pct">95%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill v" data-w="95"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-meta"><span class="skill-name">C++ (High-Performance)</span><span
+                  class="skill-pct">82%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill v" data-w="82"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-meta"><span class="skill-name">CUDA / GPU Programming</span><span
+                  class="skill-pct">70%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill v" data-w="70"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="skill-group-label">Tools &amp; Stack</div>
+          <div class="skill-bars">
+            <div class="skill-row">
+              <div class="skill-meta"><span class="skill-name">Qiskit / Cirq / PennyLane</span><span
+                  class="skill-pct">90%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill o" data-w="90"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-meta"><span class="skill-name">React / WebGL</span><span class="skill-pct">72%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill o" data-w="72"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-meta"><span class="skill-name">LaTeX / Scientific Writing</span><span
+                  class="skill-pct">88%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill o" data-w="88"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ACADEMICS -->
+  <section id="academics">
+    <div class="academics-header">
+      <div class="section-label reveal">Academics</div>
+      <h2 class="section-title reveal">The long work<br>behind the short papers</h2>
+    </div>
+
+    <div class="acad-tabs reveal">
+      <button class="acad-tab active" onclick="showTab('education',this)">Education</button>
+      <button class="acad-tab" onclick="showTab('research',this)">Research</button>
+      <button class="acad-tab" onclick="showTab('publications',this)">Publications</button>
+      <button class="acad-tab" onclick="showTab('achievements',this)">Achievements</button>
+      <button class="acad-tab" onclick="showTab('experience',this)">Experience</button>
+    </div>
+
+    <!-- EDUCATION -->
+    <div id="tab-education" class="acad-panel active">
+      <div class="edu-list">
+        <div class="edu-row">
+          <div class="edu-year">2016 — 2021</div>
+          <div>
+            <div class="edu-degree">PhD in Quantum Physics</div>
+            <div class="edu-inst">ETH Zürich — Department of Physics</div>
+            <div class="edu-note">Thesis: Topological Error Correction at the Decoherence Boundary</div>
+          </div>
+          <div class="edu-badge">Summa Cum Laude</div>
+        </div>
+        <div class="edu-row">
+          <div class="edu-year">2014 — 2016</div>
+          <div>
+            <div class="edu-degree">MSc in Theoretical Physics</div>
+            <div class="edu-inst">University of Vienna — Faculty of Physics</div>
+            <div class="edu-note">Specialisation in Quantum Information Theory</div>
+          </div>
+          <div class="edu-badge">Distinction</div>
+        </div>
+        <div class="edu-row">
+          <div class="edu-year">2011 — 2014</div>
+          <div>
+            <div class="edu-degree">BSc in Physics &amp; Mathematics</div>
+            <div class="edu-inst">University of Groningen — Netherlands</div>
+          </div>
+          <div class="edu-badge">First Class</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RESEARCH -->
+    <div id="tab-research" class="acad-panel">
+      <div class="research-grid">
+        <div class="research-card">
+          <span class="research-icon">ψ</span>
+          <div class="research-title">Quantum Error Correction</div>
+          <div class="research-desc">Surface codes, topological qubits, and fault-tolerant quantum computing. My core
+            focus for six years — developing new decoding algorithms that run in cryo-control timescales.</div>
+        </div>
+        <div class="research-card">
+          <span class="research-icon">⊗</span>
+          <div class="research-title">Many-Body Entanglement</div>
+          <div class="research-desc">Bipartite entanglement entropy in 1D and 2D spin chains. Studied phase transitions
+            through tensor network methods and entanglement spectrum analysis.</div>
+        </div>
+        <div class="research-card">
+          <span class="research-icon">ℏ</span>
+          <div class="research-title">Variational Quantum Algorithms</div>
+          <div class="research-desc">VQE and QAOA implementations for quantum chemistry and optimisation. Noise-aware
+            ansatz constructions benchmarked on IBM quantum hardware.</div>
+        </div>
+        <div class="research-card">
+          <span class="research-icon">∇</span>
+          <div class="research-title">Neural Decoders for QEC</div>
+          <div class="research-desc">Applying transformer-based architectures to real-time syndrome decoding under
+            realistic noise. Focus on latency, memory footprint, and threshold fidelity.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PUBLICATIONS -->
+    <div id="tab-publications" class="acad-panel">
+      <div class="pub-list">
+        <div class="pub-row">
+          <div class="pub-num">01</div>
+          <div>
+            <div class="pub-title">Threshold Scaling of Surface Code Decoders Under Correlated Noise</div>
+            <div class="pub-meta">Nature Quantum Information · 2023 · Voss E., Mäkinen T., Reuter A.</div>
+            <a href="#" class="pub-link">arXiv</a>
+          </div>
+        </div>
+        <div class="pub-row">
+          <div class="pub-num">02</div>
+          <div>
+            <div class="pub-title">Real-Time Syndrome Decoding with Transformer Networks at Sub-2ms Latency</div>
+            <div class="pub-meta">Physical Review Letters · 2022 · Voss E., Chen H.</div>
+            <a href="#" class="pub-link">arXiv</a>
+          </div>
+        </div>
+        <div class="pub-row">
+          <div class="pub-num">03</div>
+          <div>
+            <div class="pub-title">Entanglement Entropy Phase Transitions in Monitored Random Circuits</div>
+            <div class="pub-meta">Physical Review B · 2021 · Voss E., Hartmann S., Kovacs P.</div>
+            <a href="#" class="pub-link">arXiv</a>
+          </div>
+        </div>
+        <div class="pub-row">
+          <div class="pub-num">04</div>
+          <div>
+            <div class="pub-title">QuantumSim: A Sparse State-Vector Simulator for Noisy Quantum Circuits</div>
+            <div class="pub-meta">Journal of Open Source Software · 2021 · Voss E.</div>
+            <a href="#" class="pub-link">JOSS</a>
+          </div>
+        </div>
+        <div class="pub-row">
+          <div class="pub-num">05</div>
+          <div>
+            <div class="pub-title">Noise-Resilient VQE Ansatz Constructions for Molecular Ground States</div>
+            <div class="pub-meta">npj Quantum Information · 2020 · Voss E., Bergmann L., Dupont C.</div>
+            <a href="#" class="pub-link">arXiv</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ACHIEVEMENTS -->
+    <div id="tab-achievements" class="acad-panel">
+      <div class="ach-grid">
+        <div class="ach-card">
+          <div class="ach-year">2023</div>
+          <div class="ach-title">ETH Zürich Latsis Prize</div>
+          <div class="ach-body">Awarded annually to an ETH researcher under 40 for outstanding scientific contributions.
+            Recognised for work on topological quantum error correction.</div>
+        </div>
+        <div class="ach-card">
+          <div class="ach-year">2022</div>
+          <div class="ach-title">SNSF Ambizione Fellowship</div>
+          <div class="ach-body">Competitive four-year Swiss National Science Foundation fellowship for independent
+            research. Funded the neural decoder line of work.</div>
+        </div>
+        <div class="ach-card">
+          <div class="ach-year">2021</div>
+          <div class="ach-title">Best Doctoral Thesis — ETH Physics</div>
+          <div class="ach-body">Department prize for the most outstanding PhD thesis of academic year 2020/21.</div>
+        </div>
+        <div class="ach-card">
+          <div class="ach-year">2019</div>
+          <div class="ach-title">IBM Quantum Network Research Grant</div>
+          <div class="ach-body">Hardware access and a research grant for the VQE ansatz project, in collaboration with
+            IBM Research Zürich.</div>
+        </div>
+        <div class="ach-card">
+          <div class="ach-year">2018</div>
+          <div class="ach-title">QIP 2018 — Best Student Paper</div>
+          <div class="ach-body">Quantum Information Processing conference best student paper award for early results on
+            correlated noise thresholds.</div>
+        </div>
+        <div class="ach-card">
+          <div class="ach-year">2016</div>
+          <div class="ach-title">Vienna Physics Excellence Award</div>
+          <div class="ach-body">Awarded to the top graduating MSc student in theoretical physics at the University of
+            Vienna.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div id="tab-experience" class="acad-panel">
+      <div class="exp-list">
+        <div class="exp-row">
+          <div>
+            <div class="exp-period">2023 — Present</div>
+            <div class="exp-org">CERN / ETH Joint Lab</div>
+          </div>
+          <div>
+            <div class="exp-role">Senior Research Scientist</div>
+            <div class="exp-desc">Leading a team of four on quantum simulation infrastructure for particle physics.
+              Developing GPU-accelerated density matrix codes integrated with CERN's HPC stack.</div>
+          </div>
+        </div>
+        <div class="exp-row">
+          <div>
+            <div class="exp-period">2021 — 2023</div>
+            <div class="exp-org">ETH Zürich</div>
+          </div>
+          <div>
+            <div class="exp-role">Postdoctoral Researcher</div>
+            <div class="exp-desc">SNSF Ambizione fellow in the Quantum Information Theory group. Developed the neural
+              decoder research line and mentored three doctoral students.</div>
+          </div>
+        </div>
+        <div class="exp-row">
+          <div>
+            <div class="exp-period">Summer 2019</div>
+            <div class="exp-org">IBM Research — Zürich</div>
+          </div>
+          <div>
+            <div class="exp-role">Research Intern</div>
+            <div class="exp-desc">Noise characterisation and mitigation for superconducting qubit devices. Implemented
+              zero-noise extrapolation routines now part of Qiskit's open-source toolkit.</div>
+          </div>
+        </div>
+        <div class="exp-row">
+          <div>
+            <div class="exp-period">2016 — 2021</div>
+            <div class="exp-org">ETH Zürich</div>
+          </div>
+          <div>
+            <div class="exp-role">Doctoral Researcher</div>
+            <div class="exp-desc">PhD under Prof. M. Troyer. Built the QuantumSim library, later open-sourced and
+              adopted by 14 universities. Teaching assistant for Quantum Information I and II.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- PERSONAL -->
+  <section id="personal">
+    <div class="personal-layout">
+      <div>
+        <div class="section-label reveal">Personal</div>
+        <h2 class="section-title reveal">Beyond<br>the equations</h2>
+        <div class="personal-intro reveal">
+          <p>Science is how I think about the world, but it isn't the only way I move through it. Outside the lab, I'm a
+            hiker, a language learner, a slow reader of difficult books.</p>
+          <p>I believe the curiosity that makes a good physicist and the curiosity that makes a good person are the same
+            thing — just pointed in different directions.</p>
+        </div>
+        <div class="reading-list reveal">
+          <div class="reading-label">Currently reading</div>
+          <div class="book-row"><span class="book-title">The Emperor's New Mind</span><span class="book-author">Roger
+              Penrose</span></div>
+          <div class="book-row"><span class="book-title">Gödel, Escher, Bach</span><span class="book-author">Douglas
+              Hofstadter</span></div>
+          <div class="book-row"><span class="book-title">The Periodic Table</span><span class="book-author">Primo
+              Levi</span></div>
+          <div class="book-row"><span class="book-title">Seven Brief Lessons on Physics</span><span
+              class="book-author">Carlo Rovelli</span></div>
+        </div>
+      </div>
+      <div class="interest-grid reveal">
+        <div class="interest-card">
+          <span class="interest-glyph">⛰</span>
+          <div class="interest-name">Alpine Hiking</div>
+          <div class="interest-note">Jura mountains on weekends. A long traverse clears the mind better than any
+            whiteboard session.</div>
+        </div>
+        <div class="interest-card">
+          <span class="interest-glyph">ع</span>
+          <div class="interest-name">Arabic Language</div>
+          <div class="interest-note">Learning Modern Standard Arabic — drawn to a language where all words derive from a
+            three-letter root by transformation.</div>
+        </div>
+        <div class="interest-card">
+          <span class="interest-glyph">♟</span>
+          <div class="interest-name">Correspondence Chess</div>
+          <div class="interest-note">Slow, deliberate games played by email. The temporal non-locality of it feels
+            appropriately quantum.</div>
+        </div>
+        <div class="interest-card">
+          <span class="interest-glyph">∮</span>
+          <div class="interest-name">Science Communication</div>
+          <div class="interest-note">Writing accessible articles on quantum computing for general audiences. Clarity is
+            a form of respect.</div>
+        </div>
+        <div class="interest-card">
+          <span class="interest-glyph">𝄞</span>
+          <div class="interest-name">Piano</div>
+          <div class="interest-note">Bach and Satie. Music that rewards slow attention and reveals its structure only
+            after many repetitions.</div>
+        </div>
+        <div class="interest-card">
+          <span class="interest-glyph">☕</span>
+          <div class="interest-name">Specialty Coffee</div>
+          <div class="interest-note">Single-origin pour-overs in the morning. The ritual matters as much as the result.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <span class="contact-psi reveal">ψ</span>
+    <h2 class="section-title reveal">Let's work together</h2>
+    <p class="reveal">I'm open to research collaborations, consulting on quantum software architecture, and speaking at
+      conferences. Reach out — I usually respond within a day.</p>
+    <div class="contact-links reveal">
+      <a href="mailto:elara@quantumvoss.io" class="contact-link">elara@quantumvoss.io</a>
+      <a href="#" class="contact-link">GitHub</a>
+      <a href="#" class="contact-link">Google Scholar</a>
+      <a href="#" class="contact-link">LinkedIn</a>
+      <a href="#" class="contact-link">arXiv</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-l">ψ Elara Voss</div>
+    <div class="footer-r">Quantum Engineer · Geneva · 2025</div>
+    <div class="footer-r">Built from first principles</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
