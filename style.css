@@ -33,7 +33,7 @@ h2.section-title{font-size:clamp(2rem,4vw,3.2rem);font-weight:400;line-height:1.
 /* HERO */
 #hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:0 10vw;}
 .hero-eyebrow{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.26em;color:var(--accent);text-transform:uppercase;margin-bottom:2rem;opacity:0;animation:fadeUp .9s .2s forwards;}
-.hero-name{font-size:clamp(3.5rem,9vw,8rem);font-weight:400;line-height:.95;letter-spacing:-.02em;opacity:0;animation:fadeUp .9s .4s forwards;}
+.hero-name{font-size:clamp(3.5rem,9vw,8rem);font-weight:400;line-height:.95;letter-spacing:-.02em;opacity:0;animation:fadeUp .9s .4s forwards;margin-top: 4px;}
 .hero-name em{font-style:italic;color:var(--accent2)}
 .hero-role{margin-top:1.8rem;font-family:'DM Mono',monospace;font-size:13px;letter-spacing:.12em;color:var(--muted);opacity:0;animation:fadeUp .9s .65s forwards;display:flex;align-items:center;gap:14px;}
 .hero-role::before{content:'';display:block;width:28px;height:.5px;background:var(--muted)}
