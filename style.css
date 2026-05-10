@@ -939,7 +939,8 @@ footer {
   font-family: 'DM Mono', monospace;
   font-size: 10px;
   color: var(--muted);
-  letter-spacing: .08em
+  letter-spacing: .08em;
+  margin: 0 auto;
 }
 
 /* ANIMATIONS */
